@@ -1,5 +1,7 @@
 # phenotyping-platform
 本项目暂时为三个模块
+针脚图为1.png
+![针脚图](https://github.com/kirinhcl/phenotyping-platform/1.png)
 ## 1.自动拍照模块
 
 
@@ -20,6 +22,7 @@
                   与水泵相连端（选择NO,COM常开路连接）：
                   Ⅰ 剪开水泵其中一根电源线，两端分别连接NO和COM
 ### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的weight.py）
+    [参考](https://zhuanlan.zhihu.com/p/132478015)
     A.材料：树莓派、压力传感器、HX711模块、跳线
     B.引脚及连接：采用BCM编码
                 a.HX711
@@ -33,3 +36,4 @@
 
           
 ## 3.步进机模块
+    暂无
