@@ -7,7 +7,7 @@
 
 
 ## 2.自动灌溉模块
-### （1）基于土壤湿度传感器浇水（程序为soil.py）
+### （1）基于土壤湿度传感器浇水（程序为soil.py）（不推荐）
     A.材料：树莓派、土壤湿度传感器、继电器、水泵
     B.引脚及连接：采用BOARD编码
                 a.土壤湿度检测模块
@@ -21,7 +21,7 @@
                   Ⅲ IN——GPIO（pin12）
                   与水泵相连端（选择NO,COM常开路连接）：
                   Ⅰ 剪开水泵其中一根电源线，两端分别连接NO和COM
-### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的weight.py）
+### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的weight.py）（推荐）
 [参考教程](https://zhuanlan.zhihu.com/p/132478015)
     
     A.材料：树莓派、压力传感器、HX711模块、跳线
