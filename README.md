@@ -3,7 +3,8 @@
     针脚图为1.png
 ![针脚图](https://github.com/kirinhcl/phenotyping-platform/blob/main/1.png)
 ## 1.自动拍照模块
-
+    （1）材料：树莓派、相机模块
+    （2）安装好相机后下载RGB.py运行RGB.py即可
 
 
 ## 2.自动灌溉模块
@@ -21,37 +22,9 @@
                   Ⅲ IN——GPIO（pin12）
                   与水泵相连端（选择NO,COM常开路连接）：
                   Ⅰ 剪开水泵其中一根电源线，两端分别连接NO和COM
-```
-import RPi.GPIO as GPIO
-import time
 
 GPIO.setwarnings(False)
-
-GPIO.setmode(GPIO.BOARD)
-channel = 11
-jdq = 12
-GPIO.setup(channel, GPIO.IN)
-GPIO.setup(jdq, GPIO.OUT)
-
-def callback(channel):
-    if GPIO.input(channel):
-        print u'wet'
-        GPIO.output(12,GPIO.LOW)
-    else:
-        print u'dry'
-        GPIO.output(12,GPIO.HIGH)
- 
-GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=200)
-
-GPIO.add_event_callback(channel, callback)
- 
-
-while True:
-  time.sleep(5)
-
-GPIO.cleanup()
-```
-### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的weight.py）（推荐）
+### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的water.py）（推荐）
 [参考教程](https://zhuanlan.zhihu.com/p/132478015)
     
     A.材料：树莓派、压力传感器、HX711模块、跳线
@@ -64,8 +37,8 @@ GPIO.cleanup()
                   DT至Raspberry Pi Pin 29（GPIO 5）
                   SCK至Raspberry Pi引脚31（GPIO 6）
                 c.继电器模块同上
-    C.运行weight.py
-    D.若需要校准见参考教程
+    C.安装成功后，参考教程运行water.py进行校准
+    D.校准成功即可实现自动浇水
         
           
 ## 3.步进机模块
