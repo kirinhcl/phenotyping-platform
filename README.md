@@ -1,6 +1,6 @@
 # phenotyping-platform
-本项目暂时为三个模块
-针脚图为1.png
+    本项目暂时为三个模块
+    针脚图为1.png
 ![针脚图](https://github.com/kirinhcl/phenotyping-platform/blob/main/1.png)
 ## 1.自动拍照模块
 
