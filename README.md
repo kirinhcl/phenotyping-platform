@@ -23,7 +23,6 @@
                   与水泵相连端（选择NO,COM常开路连接）：
                   Ⅰ 剪开水泵其中一根电源线，两端分别连接NO和COM
 
-GPIO.setwarnings(False)
 ### （2）基于称重传感器浇水(基于https://github.com/tatobari/hx711py 修改)（程序为hx711py文件夹中的water.py）（推荐）
 [参考教程](https://zhuanlan.zhihu.com/p/132478015)
     
