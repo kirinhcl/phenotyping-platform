@@ -75,7 +75,7 @@ while True:
             time.sleep(1)   
         elif val < 4680:                    #当重量小于4680g浇水至4720g，并在文本中记录浇水结束时的重量，休眠5分钟
             x = int(hx.get_weight(5))
-            if x < 4720:
+            while x < 4720:
                 GPIO.output(17,GPIO.HIGH)
                 print('watering___Time:{}___weight={}g'.format(time.ctime(),x))
                 time.sleep(1)
